@@ -53,6 +53,10 @@ exports.test = common.wrap('test', _test);
 var _cat = require('./src/cat');
 exports.cat = common.wrap('cat', _cat, {idx: 1});
 
+//@include ./src/head
+var _head = require('./src/head');
+exports.head = common.wrap('head', _head, {idx: 1});
+
 // The below commands have been moved to common.ShellString(), and are only here
 // for generating the docs
 //@include ./src/to
@@ -61,6 +65,10 @@ exports.cat = common.wrap('cat', _cat, {idx: 1});
 //@include ./src/sed
 var _sed = require('./src/sed');
 exports.sed = common.wrap('sed', _sed, {idx: 3});
+
+//@include ./src/sort
+var _sort = require('./src/sort');
+exports.sort = common.wrap('sort', _sort, {idx: 1});
 
 //@include ./src/grep
 var _grep = require('./src/grep');

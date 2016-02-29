@@ -76,7 +76,7 @@ var ShellString = function (stdout, stderr) {
   that.stderr = stderr;
   that.to    = function() {wrap('to', _to, {idx: 1}).apply(that.stdout, arguments); return that;};
   that.toEnd = function() {wrap('toEnd', _toEnd, {idx: 1}).apply(that.stdout, arguments); return that;};
-  ['cat', 'sed', 'grep', 'exec'].forEach(function (cmd) {
+  ['cat', 'head', 'sed', 'sort', 'grep', 'exec'].forEach(function (cmd) {
     that[cmd] = function() {return shell[cmd].apply(that.stdout, arguments);};
   });
   return that;
