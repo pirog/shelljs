@@ -13,7 +13,7 @@ var DEFAULT_MAXBUFFER_SIZE = 20*1024*1024;
 // Node is single-threaded; callbacks and other internal state changes are done in the
 // event loop).
 function execSync(cmd, opts, pipe) {
-  var tempDir = _tempDir();
+  var tempDir = '/tmp';
   var stdoutFile = path.resolve(tempDir+'/'+common.randomFileName()),
       stderrFile = path.resolve(tempDir+'/'+common.randomFileName()),
       codeFile = path.resolve(tempDir+'/'+common.randomFileName()),
