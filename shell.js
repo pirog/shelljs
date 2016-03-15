@@ -6,7 +6,7 @@
 // http://github.com/arturadib/shelljs
 //
 
-var common = require('./src/common');
+var common = require('./src/common.js');
 
 
 //@
