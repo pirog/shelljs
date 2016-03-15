@@ -52,6 +52,9 @@ function _tempDir() {
                   writeableDir('/usr/tmp') ||
                   writeableDir('.'); // last resort
 
+  console.log("STATE IS")
+  console.log(state.tempDir);
+
   return state.tempDir;
 }
 module.exports = _tempDir;
